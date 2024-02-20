@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.frame {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: large;
+}
+
+h1::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.frame span {
+  margin-right: 10px;
+}
+.custom-text {
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
