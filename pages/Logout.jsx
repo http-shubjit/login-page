@@ -2,9 +2,9 @@ import React from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 
-const Logout = () => {
+const Logout = ({ userInput }) => {
   const router = useRouter();
-
+  console.log("Logout componenrt" + userInput)
   const handleLogout = () => {
 
     router.push("Login");
@@ -18,8 +18,8 @@ const Logout = () => {
       </Header>
       <MainContent>
         <ChartSection>
-          {/* Placeholder for charts or graphs */}
           <h2>Charts</h2>
+          {/* <pre>{JSON.stringify(userInput, null, 2)}</pre> */}
         </ChartSection>
         <TableSection>
           {/* Placeholder for tables or data grids */}
