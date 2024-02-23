@@ -2,11 +2,11 @@ import React from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 
-const Logout = ({ userInput }) => {
+const Logout = () => {
+  //{ userInput }
   const router = useRouter();
-  console.log("Logout componenrt" + userInput)
+  // console.log("Logout componenrt" + userInput);
   const handleLogout = () => {
-
     router.push("Login");
   };
 
@@ -22,10 +22,8 @@ const Logout = ({ userInput }) => {
           {/* <pre>{JSON.stringify(userInput, null, 2)}</pre> */}
         </ChartSection>
         <TableSection>
-          {/* Placeholder for tables or data grids */}
           <h2>Data Table</h2>
         </TableSection>
-        {/* Add more sections as needed */}
       </MainContent>
     </DashboardContainer>
   );

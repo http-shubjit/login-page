@@ -9,7 +9,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
 import { useRouter } from "next/router";
-import Logout from "./Logout";
 type FormData = {
   email: string;
   password: string;
@@ -27,7 +26,7 @@ const Login = () => {
     formState: { errors },
   } = useForm<FormData>();
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
   const handleLogin = () => {
     signIn("google");
   };
